@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 function List({ element, onDelete, onUpdate, allToggle }) {
 
-    const [isComplete, setIsComplete] = useState(element.isComleted);
+    const [isComplete, setIsComplete] = useState(element.isCompleted);
     //console.log(element);
     const onClickCheckBox = (e) => {
         //console.log(e.target.checked)
