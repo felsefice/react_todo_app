@@ -8,11 +8,11 @@ function Section({ contacts, setContacts, otherContacts, setOtherContacts }) {
         setOtherContacts([...newContacts]);
     }
 
-    const allToggle = () => {
-
-        const isActiveAllToggle = contacts.map((contact) => ({...contact, isCompleted: true}) )
-        console.log(isActiveAllToggle);
-        setContacts([...isActiveAllToggle])
+    const allToggle = (e) => {
+        // const new2Check = e.target.checked;
+        const isActiveAllToggle = contacts.map((contact) => ({...contact, isCompleted: true}));
+        // console.log(new2Check);
+        setContacts([...isActiveAllToggle]);
     }
 
     return (
